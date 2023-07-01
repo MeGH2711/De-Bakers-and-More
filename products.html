@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>De Baker's & More | Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <style>
+        .custom-bg1 {
+            background-color: #FACB82;
+        }
+
+        .custom-bg2 {
+            background-color: #412b14;
+            color: #FACB82;
+        }
+
+        .custom-gradient1 {
+            background: linear-gradient(to bottom, #d98928, #FACB82);
+        }
+
+        .custom-gradient2 {
+            background: linear-gradient(to bottom, #22180c, #412b14);
+            color: #FACB82;
+        }
+
+        .navbar-nav .nav-link {
+            position: relative;
+            transition: all 0.3s;
+            margin: 5px 10px;
+            /* Add padding to the left and right */
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background-color: transparent;
+            transition: all 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            transform: scale(1.1);
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+            background-color: #412b14;
+        }
+
+        .navbar-nav .nav-link.active {
+            transform: scale(1.1);
+        }
+
+        .navbar-nav .nav-link.active::after {
+            width: 100%;
+            background-color: #412b14;
+            animation: underline-animation 0.3s forwards;
+        }
+
+        @keyframes underline-animation {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        .timeline {
+            list-style: none;
+            padding: 0;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            width: 2px;
+            background-color: #412b14;
+        }
+
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: -8px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #412b14;
+        }
+
+        .timeline-content {
+            padding-left: 30px;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .timeline-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .vertical-line {
+            border-left: 2px solid #FACB82;
+            height: 100%;
+            padding-left: 30px;
+        }
+
+        .card {
+            opacity: 0;
+            transform: translateY(100px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .card.reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .btn-custom {
+            background-color: #412b14;
+            /* Replace with your desired color */
+            color: #FACB82;
+            /* Replace with desired text color */
+            /* Add any other custom styles you want */
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #825628;
+            /* Replace with your desired hover color */
+            color: #FACB82;
+        }
+    </style>
+</head>
+
+<body class="custom-bg1">
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light custom-gradient1">
+        <div class="container">
+            <!--Website Logo-->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="De Baker's & More" width="125" height="125">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link animated-underline" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animated-underline active" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animated-underline" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animated-underline" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="display-5 mt-3 fw-bold text-center">Products</h1>
+        <hr>
+        <h1 class="display-9 mt-3 mb-3 text-center">Biscuits</h1>
+        <div class="row g-4 justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Anarkali Biscuit.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Anarkali Biscuits</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 70 (250 gm)</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Chocolate Chip Biscuit.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Chocolate Chip Cookies</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 60 (250 gm)</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Coconut Badaam Biscuit.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Coconut Badaam Biscuit</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 70 (250 gm)</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Coconut Besan Biscuit.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Coconut Besan Biscuit</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 70 (250 gm)</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Fruit Biscuit.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Fruit Biscuit</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 60 (250 gm)</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Naankhatai.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Naankhatai</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 60 (250 gm)</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Mango Biscuit.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Mango Biscuit</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 60 (250 gm)</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Bournvita Biscuit.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Bournvita Biscuit</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 60 (250 gm)</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Jeera Biscuit.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Jeera Biscuit</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 70 (250 gm)</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Wheat Biscuit.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Wheat Biscuit</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 70 (250 gm)</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Coconut Khari.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Coconut Khari</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 40 (150 gm)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="display-9 mt-5 mb-5 text-center">Cream Rolls</h1>
+        <div class="row g-4 justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Elaichi CreamRoll.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Elaichi Creamroll</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 25</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Chocolate Creamroll.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Chocolate Creamroll</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 20</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Vanilla Cream Roll.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Vanilla Creamroll</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 20</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Buns-->
+        <h1 class="display-9 mt-5 mb-5 text-center">Bread &amp; Buns</h1>
+        <div class="row g-4 justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Vadapav Bun.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Vadapav Bun</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 20 (Pack of 6)</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Dabeli Bun.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Dabeli Bun</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 22 (Pack of 6)</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card border-0">
+                    <img src="images/product-images/Pavbhaji Bun.jpg" class="card-img-top">
+                    <div class="card-body custom-gradient2">
+                        <h5 class="card-title text-center">Pavbhaji Bun</h5>
+                        <hr>
+                        <h6 class="text-center">&#8377; 40 (Pack of 12)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5 mb-5">
+            <a class="btn btn-custom" href="Menu Card.pdf" role="button" download>Download Menu Card</a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="custom-bg2">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="display-6 fw-bold text-center">Contact Information</h3>
+                    <h3 class="display-7 text-center">Address</h3>
+                    <p class="text-center">
+                        GF-30, Shaligram Sqaure,<br>
+                        Near Satyamev Vista,<br>
+                        Gota, Ahmedabad - 382481
+                    </p>
+                    <h3 class="display-7 text-center">Phone Number</h3>
+                    <p class="text-center">
+                        +91 98797 18228
+                    </p>
+                    <h3 class="display-7 text-center">Email</h3>
+                    <div class="container text-center mb-3">
+                        <a href="mailto:debakersandmore@gmail.com"
+                            style="text-decoration: none; color: #FACB82;">debakersandmore@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="display-6 fw-bold text-center">About Us</h3>
+                    <p class="text-center mt-2">At De Baker's & More, we are passionate about baking delicious
+                        treats
+                        that bring
+                        joy to our customers. With
+                        our handcrafted pastries, bread, and cakes made from the finest ingredients, we aim to
+                        provide
+                        an
+                        unforgettable experience. Visit us today and indulge in the aroma and taste of freshly baked
+                        goodness.</p>
+                    <h3 class="display-6 fw-bold text-center">Opening Hours</h3>
+                    <p class="text-center">
+                        Monday - Sunday: 9:00 AM - 10:00 PM
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="display-6 fw-bold text-center">Pages</h3>
+                    <div class="text-center">
+                        <a href="index.html" style="text-decoration: none; color: #FACB82;">Home</a><br>
+                        <a href="products.html" style="text-decoration: none; color: #FACB82;">Products</a><br>
+                        <a href="contact.html" style="text-decoration: none; color: #FACB82;">Contact</a>
+                    </div>
+                    <h3 class="display-6 fw-bold text-center">Important Links</h3>
+                    <div class="container p-0 pb-0 text-center">
+                        <!-- Section: Social media -->
+                        <!-- Facebook -->
+                        <a class="btn m-1 border border-0 fs-3"
+                            onclick="window.open('https://www.facebook.com/debakersandmore','_blank')" role="button"><i
+                                class="bi bi-facebook" style="color: #FACB82;"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn m-1 border border-0 fs-3"
+                            onclick="window.open('https://www.instagram.com/de.bakers.and.more','_blank')"
+                            role="button"><i class="bi bi-instagram" style="color: #FACB82;"></i></a>
+
+                        <!-- Mail -->
+                        <a class="btn m-1 border border-0 fs-3"
+                            onclick="window.open('mailto:debakersandmore@gmail.com','_blank')" role="button"><i
+                                class="bi bi-envelope" style="color: #FACB82;"></i></a>
+
+                        <!-- Location -->
+                        <a class="btn m-1 border border-0 fs-3"
+                            onclick="window.open('https://goo.gl/maps/s7u4ML74ohUSTGu77','_blank')" role="button"><i
+                                class="bi bi-geo-alt-fill" style="color: #FACB82;"></i></a>
+
+                        <!-- Call -->
+                        <a class="btn m-1 border border-0 fs-3" onclick="window.open('tel:+919879718228','_blank')"
+                            role="button"><i class="bi bi-telephone-fill" style="color: #FACB82;"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center py-3 custom-bg2">
+            <p>&copy; 2023 De Baker's & More. All rights reserved.</p>
+            <sub>Made with &#10084; by <a
+                    onclick="window.open('https://megh2711.github.io/meghthebaadal.com/index.html','_blank')"
+                    role="button">Megh Patel</a></sub>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to reveal cards when scrolling
+        function revealCards() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                if (card.getBoundingClientRect().top < window.innerHeight) {
+                    card.classList.add('reveal');
+                }
+            });
+        }
+
+        // Reveal cards on initial load
+        revealCards();
+
+        // Reveal cards on scroll
+        window.addEventListener('scroll', revealCards);
+    </script>
+</body>
+
+</html>
