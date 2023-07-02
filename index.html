@@ -117,7 +117,7 @@
 
     .timeline-item {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(100px);
       transition: opacity 0.5s ease, transform 0.5s ease;
     }
 
@@ -128,7 +128,7 @@
 
     .content {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(100px);
       transition: opacity 0.5s ease, transform 0.5s ease;
     }
 
@@ -141,7 +141,7 @@
 
 <body class="custom-bg1">
   <!--Navigation Bar-->
-  <nav class="navbar navbar-expand-lg navbar-light custom-gradient1">
+  <nav class="navbar navbar-expand-sm navbar-light custom-gradient1">
     <div class="container">
       <!--Website Logo-->
       <a class="navbar-brand" href="index.html">
@@ -160,16 +160,32 @@
             <a class="nav-link animated-underline" href="products.html">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link animated-underline" href="#">Services</a>
+            <a class="nav-link animated-underline" href="errorpage.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link animated-underline" href="#">Contact</a>
+            <a class="nav-link animated-underline" href="errorpage.html">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <div class="container">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1000">
+          <img src="images/carousel-images/carousel-image1.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img src="images/carousel-images/carousel-image2.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img src="images/carousel-images/carousel-image3.jpg" class="d-block w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <hr>
     <h1 class="display-5 mt-3 fw-bold text-center">Home</h1>
     <hr>
     <!--Who are we?-->
@@ -177,8 +193,8 @@
       <div class="col-md-8">
         <h1 class="display-5 mt-3 fw-bold">Who are we?</h1>
         <p class="content">Welcome to De Baker's & More, where every bite tells a story of exquisite flavors and passion
-          for baking. Our
-          artisan bakery is a haven for pastry lovers, offering a delightful range of freshly baked goods that will
+          for baking. Our artisan bakery is a haven for pastry lovers, offering a delightful range of freshly baked
+          goods that will
           tantalize your taste buds. Step into our cozy bakery and immerse yourself in the warm aroma of bread,
           pastries, and cakes. From delicious biscuits to decadent chocolate cakes, each creation is crafted with love
           and attention to detail. Our skilled baker uses the finest ingredients to ensure every bite is a moment of
@@ -187,7 +203,7 @@
           you're picking up a treat for yourself or celebrating a special occasion, our bakery is a place where memories
           are made and shared. Come and experience the magic of artisan baking at De Baker's & More.</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 text-center">
         <img src="images/image1.JPG" alt="Photo" class="img-fluid">
       </div>
     </div>
@@ -289,8 +305,9 @@
     <div class="text-center py-3 custom-bg2">
       <p>&copy; 2023 De Baker's & More. All rights reserved.</p>
       <sub>Made with &#10084; by <a
-          onclick="window.open('https://megh2711.github.io/meghthebaadal.com/index.html','_blank')" role="button">Megh
-          Patel</a></sub>
+          onclick="window.open('https://megh2711.github.io/meghthebaadal.com/index.html','_blank')"
+          role="button"><b>Megh
+            Patel</b></a></sub>
     </div>
   </footer>
   <!-- JavaScript -->
