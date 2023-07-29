@@ -7,7 +7,7 @@
   <title>De Baker's & More | Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="icon" type="image/x-icon" href="images/logo.png">
   <style>
     .custom-bg1 {
@@ -21,6 +21,21 @@
 
     .custom-gradient1 {
       background: linear-gradient(to bottom, #d98928, #FACB82);
+    }
+
+    .btn-custom {
+      background-color: #412b14;
+      /* Replace with your desired color */
+      color: #FACB82;
+      /* Replace with desired text color */
+      /* Add any other custom styles you want */
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #825628;
+      /* Replace with your desired hover color */
+      color: #FACB82;
     }
 
     .navbar-nav .nav-link {
@@ -131,6 +146,11 @@
       margin: 0;
       text-align: justify;
     }
+
+    .card {
+      background-color: transparent;
+      border: none;
+    }
   </style>
 </head>
 
@@ -139,7 +159,7 @@
   <nav class="navbar navbar-expand-lg navbar-light custom-gradient1">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="images/logo.png" alt="De Baker's & More" width="125" height="125">
+        <img src="images/logo.png" alt="De Baker's & More" width="100" height="100">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -148,13 +168,13 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="products.html">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="errorpage.html">Services</a>
+            <a class="nav-link" href="errorpage.html">Offers</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="errorpage.html">Contact</a>
@@ -163,36 +183,34 @@
       </div>
     </div>
   </nav>
-  <div class="container">
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="images/carousel-images/carousel-image1.jpg" class="d-block w-100">
-        </div>
-        <div class="carousel-item" data-bs-interval="10000">
-          <img src="images/carousel-images/carousel-image2.jpg" class="d-block w-100">
-        </div>
-        <div class="carousel-item" data-bs-interval="10000">
-          <img src="images/carousel-images/carousel-image3.jpg" class="d-block w-100">
-        </div>
+  <div id="cardcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="images/carousel-images/carousel-image1.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="images/carousel-images/carousel-image2.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="images/carousel-images/carousel-image3.jpg" class="d-block w-100">
       </div>
     </div>
   </div>
   <div class="container">
     <hr>
-    <h1 class="display-5 mt-3 fw-bold text-center">Home</h1>
+    <h1 class="display-5 my-3 fw-bold text-center">Home</h1>
     <hr>
     <!--Who are we?-->
     <div class="row">
       <div class="col-md-8 mb-3">
-        <h1 class="display-5 mt-3 fw-bold">Who are we?</h1>
+        <h1 class="display-5 my-3 fw-bold">Who are we?</h1>
         <div class="about">
           <p class="content">Welcome to De Baker's & More, where every bite tells a story of exquisite flavors and
-            passion
-            for baking. Our artisan bakery is a haven for pastry lovers, offering a delightful range of freshly baked
+            passion for baking. Our artisan bakery is a haven for pastry lovers, offering a delightful range of freshly
+            baked
             goods that will tantalize your taste buds. Step into our cozy bakery and immerse yourself in the warm aroma
-            of bread,
-            pastries, and cakes. From delicious biscuits to decadent chocolate cakes, each creation is crafted with love
+            of bread, pastries, and cakes. From delicious biscuits to decadent chocolate cakes, each creation is crafted
+            with love
             and attention to detail. Our skilled baker uses the finest ingredients to ensure every bite is a moment of
             pure bliss. Savor the rich aromas and heavenly textures as you explore our diverse menu.
             At De Baker's & More, we take pride in creating unforgettable experiences through our baked goods. Whether
@@ -207,7 +225,7 @@
     </div>
     <!--Where it all started?-->
     <h1 class="display-5 mt-5 fw-bold">Where it all started?</h1>
-    <div class="mt-3">
+    <div class="my-3">
       <ul class="timeline">
         <li class="timeline-item">
           <div class="timeline-content">
@@ -228,6 +246,193 @@
         <!-- Add more timeline items as needed -->
       </ul>
     </div>
+    <h1 class="display-5 my-5 fw-bold">Testimonials</h1>
+    <div class="container my-4">
+      <div id="testcardcarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner align-items-center">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <div class="row d-flex align-items-stretch">
+              <div class="col-sm-4">
+                <div class="card text-center">
+                  <div class="card-header custom-bg1">
+                    <div class="user-image my-2">
+                      <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                    </div>
+                    <h5>Mahesh Patel</h5>
+                  </div>
+                  <div class="user-content">
+                    <p>Excellent place provides fresh bakery products made at the same place. The taste is awesome and
+                      freshness speaks itself. They keep Namkeen also so becomes single point of place for bakery
+                      products & namkeens. Must try once.</p>
+                  </div>
+                  <div class="card-footer custom-bg1">
+                    <div class="ratings">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card text-center">
+                  <div class="card-header custom-bg1">
+                    <div class="user-image my-2">
+                      <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                    </div>
+                    <h5>Pravesh Shah</h5>
+                  </div>
+                  <div class="user-content">
+                    <p>Newly launched bakery shop in Gota area. All items are fresh and made on daily basis. Puff
+                      quality was outstanding.People stay near by Gota, Godrej garden
+                      city, vande mataram area. Good quality with reasonable
+                      prices only at De Baker's & More.</p>
+                  </div>
+                  <div class="card-footer custom-bg1">
+                    <div class="ratings">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card text-center">
+                  <div class="card-header custom-bg1">
+                    <div class="user-image my-2">
+                      <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                    </div>
+                    <h5>Heli Shah</h5>
+                  </div>
+                  <div class="user-content">
+                    <p>Great place! Products are excellent especially the puffs, definitely worth trying!</p>
+                    <br><br><br>
+                  </div>
+                  <div class="card-footer custom-bg1">
+                    <div class="ratings">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="row d-flex align-items-stretch">
+              <div class="col-sm-4">
+                <div class="card text-center">
+                  <div class="card-header custom-bg1">
+                    <div class="user-image my-2">
+                      <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                    </div>
+                    <h5>Bipin Dattani</h5>
+                  </div>
+                  <div class="user-content">
+                    <p>Very nice products . I bought 4 different variety . Good taste and with low sugar .</p>
+                    <br><br><br>
+                  </div>
+                  <div class="card-footer custom-bg1">
+                    <div class="ratings">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card text-center">
+                  <div class="card-header custom-bg1">
+                    <div class="user-image my-2">
+                      <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                    </div>
+                    <h5>Megh Patel</h5>
+                  </div>
+                  <div class="user-content">
+                    <p>Amazing Experience, Especially the Puff, Cream Rolls & Biscuits taste awesome</p><br><br><br>
+                  </div>
+                  <div class="card-footer custom-bg1">
+                    <div class="ratings">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card text-center">
+                  <div class="card-header custom-bg1">
+                    <div class="user-image my-2">
+                      <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                    </div>
+                    <h5>Nitya Patel</h5>
+                  </div>
+                  <div class="user-content">
+                    <p>I would highly recommend you to visit this place. The taste, smell are the proof itself that
+                      everything is freshly made. Everything available there is just amazing in taste and i am sure you
+                      all gonna like it!!</p><br>
+                  </div>
+                  <div class="card-footer custom-bg1">
+                    <div class="ratings">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testcardcarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testcardcarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <h6 class="text-center fw-bold my-4">Share Your Reviews and Feedback with us and get a chance to be featured above.
+    </h6>
+    <form class="row my-3">
+      <div class="col-md-6">
+        <label for="name" class="form-label fw-bold my-3">Name</label>
+        <input type="text" class="form-control custom-bg1" id="name" style="border: 2px solid #412b14;"
+          required>
+      </div>
+      <div class="col-md-6">
+        <label for="validationServer02" class="form-label fw-bold my-3">Phone Number</label>
+        <input type="tel" class="form-control custom-bg1" id="validationServer02" style="border: 2px solid #412b14;"
+          required>
+      </div>
+      <div class="my-3">
+        <label for="validationTextarea" class="form-label fw-bold my-3">Enter Your Review</label>
+        <textarea class="form-control custom-bg1" id="validationTextarea" style="border: 2px solid #412b14;"
+          required></textarea>
+      </div>
+
+      <div class="my-3 text-center">
+        <button class="btn btn-custom" type="submit">Submit form</button>
+      </div>
+    </form>
   </div>
   <!-- Footer -->
   <footer class="custom-bg2">
@@ -253,7 +458,7 @@
         </div>
         <div class="col-md-4">
           <h3 class="display-6 fw-bold text-center">About Us</h3>
-          <p class="text-center mt-2">At De Baker's & More, we are passionate about baking delicious treats that bring
+          <p class="text-center my-2">At De Baker's & More, we are passionate about baking delicious treats that bring
             joy to our customers. With
             our handcrafted pastries, bread, and cakes made from the finest ingredients, we aim to provide an
             unforgettable experience. Visit us today and indulge in the aroma and taste of freshly baked goodness.</p>
