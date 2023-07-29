@@ -9,71 +9,8 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
   <style>
-    .custom-bg1 {
-      background-color: #FACB82;
-    }
-
-    .custom-bg2 {
-      background-color: #412b14;
-      color: #FACB82;
-    }
-
-    .custom-gradient1 {
-      background: linear-gradient(to bottom, #d98928, #FACB82);
-    }
-
-    .btn-custom {
-      background-color: #412b14;
-      /* Replace with your desired color */
-      color: #FACB82;
-      /* Replace with desired text color */
-      /* Add any other custom styles you want */
-      transition: background-color 0.3s ease;
-    }
-
-    .btn-custom:hover {
-      background-color: #825628;
-      /* Replace with your desired hover color */
-      color: #FACB82;
-    }
-
-    .navbar-nav .nav-link {
-      position: relative;
-      transition: all 0.3s;
-      margin: 5px 10px;
-    }
-
-    .navbar-nav .nav-link::before {
-      content: "";
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background-color: #412b14;
-      transition: width 0.3s;
-    }
-
-    .navbar-nav .nav-link:hover {
-      text-decoration: none;
-      transform: scale(1.1);
-    }
-
-    .navbar-nav .nav-link:hover::before {
-      width: 100%;
-    }
-
-    @keyframes underline-animation {
-      0% {
-        width: 0;
-      }
-
-      100% {
-        width: 100%;
-      }
-    }
-
     .timeline {
       list-style: none;
       padding: 0;
@@ -177,7 +114,7 @@
             <a class="nav-link" href="errorpage.html">Offers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="errorpage.html">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -185,14 +122,20 @@
   </nav>
   <div id="cardcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="5000">
-        <img src="images/carousel-images/carousel-image1.jpg" class="d-block w-100">
-      </div>
       <div class="carousel-item" data-bs-interval="5000">
         <img src="images/carousel-images/carousel-image2.jpg" class="d-block w-100">
       </div>
       <div class="carousel-item" data-bs-interval="5000">
+        <img src="images/carousel-images/carousel-image4.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="images/carousel-images/carousel-image1.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
         <img src="images/carousel-images/carousel-image3.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="images/carousel-images/carousel-image5.jpg" class="d-block w-100">
       </div>
     </div>
   </div>
@@ -415,8 +358,7 @@
     <form class="row my-3">
       <div class="col-md-6">
         <label for="name" class="form-label fw-bold my-3">Name</label>
-        <input type="text" class="form-control custom-bg1" id="name" style="border: 2px solid #412b14;"
-          required>
+        <input type="text" class="form-control custom-bg1" id="name" style="border: 2px solid #412b14;" required>
       </div>
       <div class="col-md-6">
         <label for="validationServer02" class="form-label fw-bold my-3">Phone Number</label>
