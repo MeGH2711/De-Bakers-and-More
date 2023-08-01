@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Lobster&display=swap');
+
+.page-heading {
+    font-family: 'Belanosima', sans-serif;
+}
+
 .custom-bg1 {
     background-color: #FACB82;
 }

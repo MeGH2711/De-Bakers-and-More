@@ -135,13 +135,13 @@
         <img src="images/carousel-images/carousel-image3.jpg" class="d-block w-100">
       </div>
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="images/carousel-images/carousel-image5.jpg" class="d-block w-100">
+        <img src="images/carousel-images/carousel-image5.jpg" href="google.com" class="d-block w-100">
       </div>
     </div>
   </div>
   <div class="container">
     <hr>
-    <h1 class="display-5 my-3 fw-bold text-center">Home</h1>
+    <h1 class="display-5 my-3 fw-bold text-center page-heading">Home</h1>
     <hr>
     <!--Who are we?-->
     <div class="row">
@@ -163,12 +163,94 @@
         </div>
       </div>
       <div class="col-md-4 text-center">
-        <img src="images/image1.JPG" alt="Photo" class="img-fluid">
+        <img src="images/image1.JPG" alt="Photo" class="img-fluid" style="border-radius: 10px;">
       </div>
     </div>
+    <h3 class="display-5 mt-5 fw-bold text-center">Products we sell</h3>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <div class="row my-5 justify-content-center">
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-header custom-bg1" style="border-bottom: none;">
+                <img src="images/landing-page-product-photos/cakes-landing-page.jpeg" width="200px"
+                  style="border-radius: 50%;">
+              </div>
+              <h4 class="page-heading my-2">Cakes</h4>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-header custom-bg1" style="border-bottom: none;">
+                <img src="images/landing-page-product-photos/pastry-landing-page.jpeg" width="200px"
+                  style="border-radius: 50%;">
+              </div>
+              <h4 class="page-heading my-2">Pastries</h4>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-header custom-bg1" style="border-bottom: none;">
+                <img src="images/landing-page-product-photos/biscuit-landing-page.jpeg" width="200px"
+                  style="border-radius: 50%;">
+              </div>
+              <h4 class="page-heading my-2">Biscuits</h4>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-header custom-bg1" style="border-bottom: none;">
+                <img src="images/landing-page-product-photos/creamroll-landing-page.jpeg" width="200px"
+                  style="border-radius: 50%;">
+              </div>
+              <h4 class="page-heading my-2">Creamroll</h4>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="row my-5 justify-content-center">
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-header custom-bg1" style="border-bottom: none;">
+                <img src="images/landing-page-product-photos/toast-landing-page.jpeg" width="200px"
+                  style="border-radius: 50%;">
+              </div>
+              <h4 class="page-heading my-2">Toast</h4>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-header custom-bg1" style="border-bottom: none;">
+                <img src="images/landing-page-product-photos/bun-landing-page.jpeg" width="200px"
+                  style="border-radius: 50%;">
+              </div>
+              <h4 class="page-heading my-2">Bun</h4>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-header custom-bg1" style="border-bottom: none;">
+                <img src="images/landing-page-product-photos/khari-landing-page.jpeg" width="200px"
+                  style="border-radius: 50%;">
+              </div>
+              <h4 class="page-heading my-2">Khari</h4>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-header custom-bg1" style="border-bottom: none;">
+                <img src="images/landing-page-product-photos/bread-landing-page.jpeg" width="200px"
+                  style="border-radius: 50%;">
+              </div>
+              <h4 class="page-heading my-2">Bread</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev d-flex justify-content-start" type="button"
+        data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon custom-bg2" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next d-flex justify-content-end" type="button"
+        data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon custom-bg2" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="text-center">
+      <sup class="fw-bold">*We accept orders for custom-made cakes*</sup>
+    </div>
     <!--Where it all started?-->
-    <h1 class="display-5 mt-5 fw-bold">Where it all started?</h1>
-    <div class="my-3">
+    <h1 class="display-5 my-5 fw-bold">Where it all started?</h1>
+    <div class="my-3 mx-3">
       <ul class="timeline">
         <li class="timeline-item">
           <div class="timeline-content">
@@ -343,17 +425,17 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testcardcarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <button class="carousel-control-prev d-flex justify-content-start" type="button" data-bs-target="#testcardcarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon " aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testcardcarousel" data-bs-slide="next">
+        <button class="carousel-control-next d-flex justify-content-end" type="button" data-bs-target="#testcardcarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </div>
-    <h6 class="text-center fw-bold my-4">Share Your Reviews and Feedback with us and get a chance to be featured above.
+    <h6 class="text-center fw-bold my-5">Share Your Reviews and Feedback with us and get a chance to be featured above.
     </h6>
     <form class="row my-3">
       <div class="col-md-6">
